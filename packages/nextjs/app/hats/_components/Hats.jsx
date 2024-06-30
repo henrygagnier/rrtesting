@@ -7,7 +7,7 @@ import { useScaffoldReadContract, useScaffoldWriteContract } from "~~/hooks/scaf
 
 // const claimableHatId = "26960358049567071831564234593151059434471056522609336320533481914368";
 
-function getHatConfig(chainId: number) {
+function getHatConfig(chainId) {
   let claimableHatId1 = "";
   let claimableHatId2 = "";
   let claimableHatId3 = "";
@@ -104,9 +104,9 @@ export function Hats() {
   //   args: [BigInt(claimableHatId3)],
   // });
 
-  const result1: any = useFetch(viewHat1 ? viewHat1[5].replace("ipfs://", "https://nftstorage.link/ipfs/") : "");
-  const result2: any = useFetch(viewHat2 ? viewHat2[5].replace("ipfs://", "https://nftstorage.link/ipfs/") : "");
-  const result3: any = useFetch(viewHat3 ? viewHat3[5].replace("ipfs://", "https://nftstorage.link/ipfs/") : "");
+  const result1 = useFetch(viewHat1 ? viewHat1[5].replace("ipfs://", "https://nftstorage.link/ipfs/") : "");
+  const result2 = useFetch(viewHat2 ? viewHat2[5].replace("ipfs://", "https://nftstorage.link/ipfs/") : "");
+  const result3 = useFetch(viewHat3 ? viewHat3[5].replace("ipfs://", "https://nftstorage.link/ipfs/") : "");
 
   const doesUserMeetRepRequirements1 = userTokens[0]?.balance >= 100;
   const doesUserMeetRepRequirements2 = userTokens[0]?.balance >= 500;

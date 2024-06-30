@@ -18,7 +18,7 @@ contract DeployDemoScript is ScaffoldETHDeploy {
     address controller = 0x2911B8cB873651Cb99f9975E6791EDBded598017; //replace with burner or other address from wallet!
 
     function run() external {
-        uint256 deployerPrivateKey = 0x1ecea19f9bb246fdf1e5561d2ca517dd0f8df75e3b89b2ff8c7d0865e7962dbd;
+        uint256 deployerPrivateKey = "";
         if (deployerPrivateKey == 0) {
             revert InvalidPrivateKey(
                 "You don't have a deployer account. Make sure you have set DEPLOYER_PRIVATE_KEY in .env or use `yarn generate` to generate a new random account"

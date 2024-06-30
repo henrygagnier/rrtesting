@@ -108,7 +108,8 @@ function main() {
       (transaction) => transaction.transactionType == "CREATE"
     );
     transactionsCreate.forEach((transaction) => {
-      const artifact = getArtifactOfContract(transaction.contractName);
+      console.log(deployments[chain]);
+      const artifact = getArtifactOfContract(transaction.contractName || "ERC1155EligibiltiyModule");
       allGeneratedContracts[chain][
         deployments[chain][transaction.contractAddress] ||
           transaction.contractName

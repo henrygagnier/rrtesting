@@ -49,7 +49,7 @@ export function RepTokensDemo() {
 
         <div className="py-1 space-y-5 flex flex-col justify-center items-center bg-[length:100%_100%] py-1 px-5 sm:px-0 lg:py-auto max-w-[100vw] ">
           <TabPanel>
-            <p className="text-center text-4xl my-1">Multi-Card</p>
+            <p className="text-center text-4xl my-1">Large Card</p>
             <ReputationTokenGroupCard
               tokens={userTokens}
               preChildren={<AddressCard address={reputationTokens?.address} />}

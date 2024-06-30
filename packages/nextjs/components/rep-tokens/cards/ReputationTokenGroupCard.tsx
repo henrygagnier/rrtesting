@@ -1,6 +1,7 @@
 // import { TokenGroup } from "../hooks/Hooks";
 import { Token } from "../hooks/Hooks";
 import { ReputationTokenCard } from "./ReputationTokenCard";
+import styles from "./comp.module.css"
 
 export interface TokenCardInternalProps {
   tokens: Token[];
@@ -54,9 +55,9 @@ export const ReputationTokenGroupCard = ({
   }
 
   return (
-    <div className={`bg-base-100 flex flex-col rounded-lg ${sizeMap[size]} space-y-2`}>
+    <div className={`bg-base-100 flex flex-col rounded-lg ${sizeMap[size]} space-y-2 ${styles.card}`}>
       {preChildren}
-      <div className={`flex flex-wrap justify-center ${sizeMap[size]} rounded-lg bg-base-200`}>{output}</div>
+      <div className={`flex flex-wrap justify-center ${sizeMap[size]} rounded-lg bg-base-200 ${styles.card}`}>{output}</div>
       {postChildren}
     </div>
   );

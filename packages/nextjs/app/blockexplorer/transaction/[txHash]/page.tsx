@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import { Hash } from "viem";
 import { isZeroAddress } from "~~/utils/scaffold-eth/common";
 
+
 type PageProps = {
   params: { txHash?: Hash };
 };

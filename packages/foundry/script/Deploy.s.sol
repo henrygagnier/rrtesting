@@ -17,6 +17,8 @@ contract DeployScript is ScaffoldETHDeploy {
         DeployDemoScript deployer = new DeployDemoScript();
         deployer.run();
 
+        
+
         // DeployFactoryScript factoryDeployer = new DeployFactoryScript();
         // factoryDeployer.run();
         exportDeployments();

@@ -5,9 +5,9 @@
 import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 
 const deployedContracts = {
-  31337: {
+  4002: {
     ReputationTokens: {
-      address: "0x8bee2037448f096900fd9affc427d38ae6cc0350",
+      address: "0xcf0f66865b2fb99c5bbb2cfa953c8a51c22490e7",
       abi: [
         {
           type: "constructor",
@@ -1371,16 +1371,20 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {
-        owner: "lib/reputation/lib/solidstate-solidity/contracts/access/ownable/Ownable.sol",
-        transferOwnership: "lib/reputation/lib/solidstate-solidity/contracts/access/ownable/Ownable.sol",
+        owner:
+          "lib/reputation/lib/solidstate-solidity/contracts/access/ownable/Ownable.sol",
+        transferOwnership:
+          "lib/reputation/lib/solidstate-solidity/contracts/access/ownable/Ownable.sol",
         MINTER_ROLE: "lib/reputation/contracts/ReputationTokensBase.sol",
-        TOKEN_MIGRATOR_ROLE: "lib/reputation/contracts/ReputationTokensBase.sol",
+        TOKEN_MIGRATOR_ROLE:
+          "lib/reputation/contracts/ReputationTokensBase.sol",
         TOKEN_UPDATER_ROLE: "lib/reputation/contracts/ReputationTokensBase.sol",
         accountsByToken: "lib/reputation/contracts/ReputationTokensBase.sol",
         balanceOf: "lib/reputation/contracts/ReputationTokensBase.sol",
         balanceOfBatch: "lib/reputation/contracts/ReputationTokensBase.sol",
         burnedBalanceOf: "lib/reputation/contracts/ReputationTokensBase.sol",
-        distributableBalanceOf: "lib/reputation/contracts/ReputationTokensBase.sol",
+        distributableBalanceOf:
+          "lib/reputation/contracts/ReputationTokensBase.sol",
         distribute: "lib/reputation/contracts/ReputationTokensBase.sol",
         distributeBatch: "lib/reputation/contracts/ReputationTokensBase.sol",
         getRoleAdmin: "lib/reputation/contracts/ReputationTokensBase.sol",
@@ -1397,7 +1401,8 @@ const deployedContracts = {
         mintBatch: "lib/reputation/contracts/ReputationTokensBase.sol",
         renounceRole: "lib/reputation/contracts/ReputationTokensBase.sol",
         revokeRole: "lib/reputation/contracts/ReputationTokensBase.sol",
-        safeBatchTransferFrom: "lib/reputation/contracts/ReputationTokensBase.sol",
+        safeBatchTransferFrom:
+          "lib/reputation/contracts/ReputationTokensBase.sol",
         safeTransferFrom: "lib/reputation/contracts/ReputationTokensBase.sol",
         setApprovalForAll: "lib/reputation/contracts/ReputationTokensBase.sol",
         supportsInterface: "lib/reputation/contracts/ReputationTokensBase.sol",
@@ -1410,7 +1415,7 @@ const deployedContracts = {
       },
     },
     ReputationFaucet: {
-      address: "0xe1708fa6bb2844d5384613ef0846f9bc1e8ec55e",
+      address: "0x26ab242603c533ade27cbeac86efeac0b2141e56",
       abi: [
         {
           type: "constructor",
@@ -1529,13 +1534,16 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {
-        onERC1155BatchReceived: "lib/openzeppelin-contracts/contracts/token/ERC1155/utils/ERC1155Holder.sol",
-        onERC1155Received: "lib/openzeppelin-contracts/contracts/token/ERC1155/utils/ERC1155Holder.sol",
-        supportsInterface: "lib/openzeppelin-contracts/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+        onERC1155BatchReceived:
+          "lib/openzeppelin-contracts/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+        onERC1155Received:
+          "lib/openzeppelin-contracts/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+        supportsInterface:
+          "lib/openzeppelin-contracts/contracts/token/ERC1155/utils/ERC1155Holder.sol",
       },
     },
     Hats: {
-      address: "0x683d9cdd3239e0e01e8dc6315fa50ad92ab71d2d",
+      address: "0x7a83fc78952cd20e080f7a32b421684bb4f70705",
       abi: [
         {
           type: "constructor",
@@ -3495,364 +3503,8 @@ const deployedContracts = {
         linkedTreeRequests: "contracts/Hats/HatsIdUtilities.sol",
       },
     },
-    MultiClaimsHatter: {
-      address: "0x71a0b8a2245a9770a4d887ce1e4ecc6c1d4ff28c",
-      abi: [
-        {
-          type: "constructor",
-          inputs: [
-            {
-              name: "_version",
-              type: "string",
-              internalType: "string",
-            },
-            {
-              name: "hats",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          stateMutability: "nonpayable",
-        },
-        {
-          type: "function",
-          name: "IMPLEMENTATION",
-          inputs: [],
-          outputs: [
-            {
-              name: "",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          stateMutability: "pure",
-        },
-        {
-          type: "function",
-          name: "accountCanClaim",
-          inputs: [
-            {
-              name: "_account",
-              type: "address",
-              internalType: "address",
-            },
-            {
-              name: "_hatId",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          outputs: [
-            {
-              name: "",
-              type: "bool",
-              internalType: "bool",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "canClaimForAccount",
-          inputs: [
-            {
-              name: "_account",
-              type: "address",
-              internalType: "address",
-            },
-            {
-              name: "_hatId",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          outputs: [
-            {
-              name: "",
-              type: "bool",
-              internalType: "bool",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "claimHat",
-          inputs: [
-            {
-              name: "_hatId",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          outputs: [],
-          stateMutability: "nonpayable",
-        },
-        {
-          type: "function",
-          name: "hatExists",
-          inputs: [
-            {
-              name: "_hatId",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          outputs: [
-            {
-              name: "",
-              type: "bool",
-              internalType: "bool",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "hatId",
-          inputs: [],
-          outputs: [
-            {
-              name: "",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          stateMutability: "pure",
-        },
-        {
-          type: "function",
-          name: "hatToClaimType",
-          inputs: [
-            {
-              name: "hatId",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          outputs: [
-            {
-              name: "claimType",
-              type: "uint8",
-              internalType: "enum MultiClaimsHatter.ClaimType",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "isClaimableBy",
-          inputs: [
-            {
-              name: "_hatId",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          outputs: [
-            {
-              name: "",
-              type: "bool",
-              internalType: "bool",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "isClaimableFor",
-          inputs: [
-            {
-              name: "_hatId",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          outputs: [
-            {
-              name: "",
-              type: "bool",
-              internalType: "bool",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "setUp",
-          inputs: [
-            {
-              name: "_initData",
-              type: "bytes",
-              internalType: "bytes",
-            },
-          ],
-          outputs: [],
-          stateMutability: "nonpayable",
-        },
-        {
-          type: "function",
-          name: "version",
-          inputs: [],
-          outputs: [
-            {
-              name: "",
-              type: "string",
-              internalType: "string",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "version_",
-          inputs: [],
-          outputs: [
-            {
-              name: "",
-              type: "string",
-              internalType: "string",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "wearsAdmin",
-          inputs: [
-            {
-              name: "_hatId",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          outputs: [
-            {
-              name: "",
-              type: "bool",
-              internalType: "bool",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "event",
-          name: "HatClaimabilitySet",
-          inputs: [
-            {
-              name: "hatId",
-              type: "uint256",
-              indexed: false,
-              internalType: "uint256",
-            },
-            {
-              name: "claimType",
-              type: "uint8",
-              indexed: false,
-              internalType: "enum MultiClaimsHatter.ClaimType",
-            },
-          ],
-          anonymous: false,
-        },
-        {
-          type: "event",
-          name: "HatsClaimabilitySet",
-          inputs: [
-            {
-              name: "hatIds",
-              type: "uint256[]",
-              indexed: false,
-              internalType: "uint256[]",
-            },
-            {
-              name: "claimTypes",
-              type: "uint8[]",
-              indexed: false,
-              internalType: "enum MultiClaimsHatter.ClaimType[]",
-            },
-          ],
-          anonymous: false,
-        },
-        {
-          type: "event",
-          name: "Initialized",
-          inputs: [
-            {
-              name: "version",
-              type: "uint64",
-              indexed: false,
-              internalType: "uint64",
-            },
-          ],
-          anonymous: false,
-        },
-        {
-          type: "error",
-          name: "InvalidInitialization",
-          inputs: [],
-        },
-        {
-          type: "error",
-          name: "MultiClaimsHatter_NotExplicitlyEligible",
-          inputs: [
-            {
-              name: "account",
-              type: "address",
-              internalType: "address",
-            },
-            {
-              name: "hatId",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-        },
-        {
-          type: "error",
-          name: "NotInitializing",
-          inputs: [],
-        },
-      ],
-      inheritedFunctions: {
-        IMPLEMENTATION: "contracts/Hats-Modules/HatsModule.sol",
-        hatId: "contracts/Hats-Modules/HatsModule.sol",
-        setUp: "contracts/Hats-Modules/HatsModule.sol",
-        version: "contracts/Hats-Modules/HatsModule.sol",
-        version_: "contracts/Hats-Modules/HatsModule.sol",
-      },
-    },
-    ActiveModule: {
-      address: "0xae120f0df055428e45b264e7794a18c54a2a3faf",
-      abi: [
-        {
-          type: "function",
-          name: "getWearerStatus",
-          inputs: [
-            {
-              name: "",
-              type: "uint256",
-              internalType: "uint256",
-            },
-          ],
-          outputs: [
-            {
-              name: "eligible",
-              type: "bool",
-              internalType: "bool",
-            },
-            {
-              name: "standing",
-              type: "bool",
-              internalType: "bool",
-            },
-          ],
-          stateMutability: "pure",
-        },
-      ],
-      inheritedFunctions: {},
-    },
-    ERC1155EligibiltiyModule: {
-      address: "0x01e21d7b8c39dc4c764c19b308bd8b14b1ba139e",
+    null: {
+      address: "0xa25ed67e507e617273d9f3b36ec902829ae625d1",
       abi: [
         {
           type: "constructor",
@@ -3902,9 +3554,113 @@ const deployedContracts = {
       ],
       inheritedFunctions: {},
     },
-    ReputationTokensUpgradeable: {
-      address: "0x547382c0d1b23f707918d3c83a77317b71aa8470",
+    ActiveModule: {
+      address: "0x93e8dcc2310d06d8735f5b862c8312da3799a0d9",
       abi: [
+        {
+          type: "function",
+          name: "getWearerStatus",
+          inputs: [
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "eligible",
+              type: "bool",
+              internalType: "bool",
+            },
+            {
+              name: "standing",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "pure",
+        },
+      ],
+      inheritedFunctions: {},
+    },
+    ERC1155EligibiltiyModule: {
+      address: "0x68af85604a7ad50560837729f1c851f758f22d27",
+      abi: [
+        {
+          type: "constructor",
+          inputs: [
+            {
+              name: "erc1155Address",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "amount",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "getWearerStatus",
+          inputs: [
+            {
+              name: "_wearer",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "eligible",
+              type: "bool",
+              internalType: "bool",
+            },
+            {
+              name: "standing",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+      ],
+      inheritedFunctions: {},
+    },
+  },
+  31337: {
+    ReputationTokens: {
+      address: "0x045857bdeae7c1c7252d611eb24eb55564198b4c",
+      abi: [
+        {
+          type: "constructor",
+          inputs: [
+            {
+              name: "newOwner",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "admins",
+              type: "address[]",
+              internalType: "address[]",
+            },
+            {
+              name: "tokenUpdaters",
+              type: "address[]",
+              internalType: "address[]",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
         {
           type: "function",
           name: "MINTER_ROLE",
@@ -4271,29 +4027,6 @@ const deployedContracts = {
             },
           ],
           stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "initialize",
-          inputs: [
-            {
-              name: "newOwner",
-              type: "address",
-              internalType: "address",
-            },
-            {
-              name: "admins",
-              type: "address[]",
-              internalType: "address[]",
-            },
-            {
-              name: "tokenUpdaters",
-              type: "address[]",
-              internalType: "address[]",
-            },
-          ],
-          outputs: [],
-          stateMutability: "nonpayable",
         },
         {
           type: "function",
@@ -4825,19 +4558,6 @@ const deployedContracts = {
         },
         {
           type: "event",
-          name: "Initialized",
-          inputs: [
-            {
-              name: "version",
-              type: "uint8",
-              indexed: false,
-              internalType: "uint8",
-            },
-          ],
-          anonymous: false,
-        },
-        {
-          type: "event",
           name: "Migrate",
           inputs: [
             {
@@ -5252,11 +4972,6 @@ const deployedContracts = {
         },
         {
           type: "error",
-          name: "Initializable__AlreadyInitialized",
-          inputs: [],
-        },
-        {
-          type: "error",
           name: "Ownable__NotOwner",
           inputs: [],
         },
@@ -5287,16 +5002,20 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {
-        owner: "lib/reputation/lib/solidstate-solidity/contracts/access/ownable/Ownable.sol",
-        transferOwnership: "lib/reputation/lib/solidstate-solidity/contracts/access/ownable/Ownable.sol",
+        owner:
+          "lib/reputation/lib/solidstate-solidity/contracts/access/ownable/Ownable.sol",
+        transferOwnership:
+          "lib/reputation/lib/solidstate-solidity/contracts/access/ownable/Ownable.sol",
         MINTER_ROLE: "lib/reputation/contracts/ReputationTokensBase.sol",
-        TOKEN_MIGRATOR_ROLE: "lib/reputation/contracts/ReputationTokensBase.sol",
+        TOKEN_MIGRATOR_ROLE:
+          "lib/reputation/contracts/ReputationTokensBase.sol",
         TOKEN_UPDATER_ROLE: "lib/reputation/contracts/ReputationTokensBase.sol",
         accountsByToken: "lib/reputation/contracts/ReputationTokensBase.sol",
         balanceOf: "lib/reputation/contracts/ReputationTokensBase.sol",
         balanceOfBatch: "lib/reputation/contracts/ReputationTokensBase.sol",
         burnedBalanceOf: "lib/reputation/contracts/ReputationTokensBase.sol",
-        distributableBalanceOf: "lib/reputation/contracts/ReputationTokensBase.sol",
+        distributableBalanceOf:
+          "lib/reputation/contracts/ReputationTokensBase.sol",
         distribute: "lib/reputation/contracts/ReputationTokensBase.sol",
         distributeBatch: "lib/reputation/contracts/ReputationTokensBase.sol",
         getRoleAdmin: "lib/reputation/contracts/ReputationTokensBase.sol",
@@ -5313,7 +5032,8 @@ const deployedContracts = {
         mintBatch: "lib/reputation/contracts/ReputationTokensBase.sol",
         renounceRole: "lib/reputation/contracts/ReputationTokensBase.sol",
         revokeRole: "lib/reputation/contracts/ReputationTokensBase.sol",
-        safeBatchTransferFrom: "lib/reputation/contracts/ReputationTokensBase.sol",
+        safeBatchTransferFrom:
+          "lib/reputation/contracts/ReputationTokensBase.sol",
         safeTransferFrom: "lib/reputation/contracts/ReputationTokensBase.sol",
         setApprovalForAll: "lib/reputation/contracts/ReputationTokensBase.sol",
         supportsInterface: "lib/reputation/contracts/ReputationTokensBase.sol",
@@ -5325,24 +5045,14 @@ const deployedContracts = {
         uri: "lib/reputation/contracts/ReputationTokensBase.sol",
       },
     },
-    ReputationTokensFactory: {
-      address: "0x7c8baafa542c57ff9b2b90612bf8ab9e86e22c09",
+    ReputationFaucet: {
+      address: "0x71089ba41e478702e1904692385be3972b2cbf9e",
       abi: [
         {
           type: "constructor",
           inputs: [
             {
-              name: "_admins",
-              type: "address[]",
-              internalType: "address[]",
-            },
-            {
-              name: "implementation",
-              type: "address",
-              internalType: "address",
-            },
-            {
-              name: "op",
+              name: "addr",
               type: "address",
               internalType: "address",
             },
@@ -5351,212 +5061,87 @@ const deployedContracts = {
         },
         {
           type: "function",
-          name: "DEFAULT_ADMIN_ROLE",
+          name: "claim",
           inputs: [],
-          outputs: [
-            {
-              name: "",
-              type: "bytes32",
-              internalType: "bytes32",
-            },
-          ],
-          stateMutability: "view",
+          outputs: [],
+          stateMutability: "nonpayable",
         },
         {
           type: "function",
-          name: "DEPLOYER_ROLE",
-          inputs: [],
+          name: "onERC1155BatchReceived",
+          inputs: [
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "uint256[]",
+              internalType: "uint256[]",
+            },
+            {
+              name: "",
+              type: "uint256[]",
+              internalType: "uint256[]",
+            },
+            {
+              name: "",
+              type: "bytes",
+              internalType: "bytes",
+            },
+          ],
           outputs: [
             {
               name: "",
-              type: "bytes32",
-              internalType: "bytes32",
+              type: "bytes4",
+              internalType: "bytes4",
             },
           ],
-          stateMutability: "view",
+          stateMutability: "nonpayable",
         },
         {
           type: "function",
-          name: "contractInstanceCount",
-          inputs: [],
-          outputs: [
+          name: "onERC1155Received",
+          inputs: [
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
             {
               name: "",
               type: "uint256",
               internalType: "uint256",
             },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "createNewInstance",
-          inputs: [
-            {
-              name: "owner",
-              type: "address",
-              internalType: "address",
-            },
-            {
-              name: "admins",
-              type: "address[]",
-              internalType: "address[]",
-            },
-            {
-              name: "tokenUpdaters",
-              type: "address[]",
-              internalType: "address[]",
-            },
-          ],
-          outputs: [
-            {
-              name: "instanceAddress",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          stateMutability: "nonpayable",
-        },
-        {
-          type: "function",
-          name: "getRoleAdmin",
-          inputs: [
-            {
-              name: "role",
-              type: "bytes32",
-              internalType: "bytes32",
-            },
-          ],
-          outputs: [
-            {
-              name: "",
-              type: "bytes32",
-              internalType: "bytes32",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "grantRole",
-          inputs: [
-            {
-              name: "role",
-              type: "bytes32",
-              internalType: "bytes32",
-            },
-            {
-              name: "account",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          outputs: [],
-          stateMutability: "nonpayable",
-        },
-        {
-          type: "function",
-          name: "hasRole",
-          inputs: [
-            {
-              name: "role",
-              type: "bytes32",
-              internalType: "bytes32",
-            },
-            {
-              name: "account",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          outputs: [
-            {
-              name: "",
-              type: "bool",
-              internalType: "bool",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "instances",
-          inputs: [
             {
               name: "",
               type: "uint256",
               internalType: "uint256",
             },
+            {
+              name: "",
+              type: "bytes",
+              internalType: "bytes",
+            },
           ],
           outputs: [
             {
               name: "",
-              type: "address",
-              internalType: "contract ReputationTokensUpgradeable",
+              type: "bytes4",
+              internalType: "bytes4",
             },
           ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "renounceRole",
-          inputs: [
-            {
-              name: "role",
-              type: "bytes32",
-              internalType: "bytes32",
-            },
-            {
-              name: "callerConfirmation",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          outputs: [],
-          stateMutability: "nonpayable",
-        },
-        {
-          type: "function",
-          name: "revokeRole",
-          inputs: [
-            {
-              name: "role",
-              type: "bytes32",
-              internalType: "bytes32",
-            },
-            {
-              name: "account",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          outputs: [],
-          stateMutability: "nonpayable",
-        },
-        {
-          type: "function",
-          name: "s_implementation",
-          inputs: [],
-          outputs: [
-            {
-              name: "",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          stateMutability: "view",
-        },
-        {
-          type: "function",
-          name: "setImplementation",
-          inputs: [
-            {
-              name: "implementation",
-              type: "address",
-              internalType: "address",
-            },
-          ],
-          outputs: [],
           stateMutability: "nonpayable",
         },
         {
@@ -5578,20 +5163,1524 @@ const deployedContracts = {
           ],
           stateMutability: "view",
         },
+      ],
+      inheritedFunctions: {
+        onERC1155BatchReceived:
+          "lib/openzeppelin-contracts/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+        onERC1155Received:
+          "lib/openzeppelin-contracts/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+        supportsInterface:
+          "lib/openzeppelin-contracts/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+      },
+    },
+    Hats: {
+      address: "0x9bcc604d4381c5b0ad12ff3bf32bede063416bc7",
+      abi: [
         {
-          type: "event",
-          name: "CreatedNewInstance",
+          type: "constructor",
           inputs: [
             {
-              name: "creator",
+              name: "_name",
+              type: "string",
+              internalType: "string",
+            },
+            {
+              name: "_baseImageURI",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "approveLinkTopHatToTree",
+          inputs: [
+            {
+              name: "_topHatDomain",
+              type: "uint32",
+              internalType: "uint32",
+            },
+            {
+              name: "_newAdminHat",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_eligibility",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_toggle",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_details",
+              type: "string",
+              internalType: "string",
+            },
+            {
+              name: "_imageURI",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "badStandings",
+          inputs: [
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [
+            {
+              name: "",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "balanceOf",
+          inputs: [
+            {
+              name: "_wearer",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "balance",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "balanceOfBatch",
+          inputs: [
+            {
+              name: "_wearers",
+              type: "address[]",
+              internalType: "address[]",
+            },
+            {
+              name: "_hatIds",
+              type: "uint256[]",
+              internalType: "uint256[]",
+            },
+          ],
+          outputs: [
+            {
+              name: "balances",
+              type: "uint256[]",
+              internalType: "uint256[]",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "baseImageURI",
+          inputs: [],
+          outputs: [
+            {
+              name: "",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "batchCreateHats",
+          inputs: [
+            {
+              name: "_admins",
+              type: "uint256[]",
+              internalType: "uint256[]",
+            },
+            {
+              name: "_details",
+              type: "string[]",
+              internalType: "string[]",
+            },
+            {
+              name: "_maxSupplies",
+              type: "uint32[]",
+              internalType: "uint32[]",
+            },
+            {
+              name: "_eligibilityModules",
+              type: "address[]",
+              internalType: "address[]",
+            },
+            {
+              name: "_toggleModules",
+              type: "address[]",
+              internalType: "address[]",
+            },
+            {
+              name: "_mutables",
+              type: "bool[]",
+              internalType: "bool[]",
+            },
+            {
+              name: "_imageURIs",
+              type: "string[]",
+              internalType: "string[]",
+            },
+          ],
+          outputs: [
+            {
+              name: "success",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "batchMintHats",
+          inputs: [
+            {
+              name: "_hatIds",
+              type: "uint256[]",
+              internalType: "uint256[]",
+            },
+            {
+              name: "_wearers",
+              type: "address[]",
+              internalType: "address[]",
+            },
+          ],
+          outputs: [
+            {
+              name: "success",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "buildHatId",
+          inputs: [
+            {
+              name: "_admin",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_newHat",
+              type: "uint16",
+              internalType: "uint16",
+            },
+          ],
+          outputs: [
+            {
+              name: "id",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "pure",
+        },
+        {
+          type: "function",
+          name: "changeHatDetails",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_newDetails",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "changeHatEligibility",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_newEligibility",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "changeHatImageURI",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_newImageURI",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "changeHatMaxSupply",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_newMaxSupply",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "changeHatToggle",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_newToggle",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "checkHatStatus",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "toggled",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "checkHatWearerStatus",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_wearer",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [
+            {
+              name: "updated",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "createHat",
+          inputs: [
+            {
+              name: "_admin",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_details",
+              type: "string",
+              internalType: "string",
+            },
+            {
+              name: "_maxSupply",
+              type: "uint32",
+              internalType: "uint32",
+            },
+            {
+              name: "_eligibility",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_toggle",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_mutable",
+              type: "bool",
+              internalType: "bool",
+            },
+            {
+              name: "_imageURI",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          outputs: [
+            {
+              name: "newHatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "getAdminAtLevel",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_level",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          outputs: [
+            {
+              name: "admin",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "getAdminAtLocalLevel",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_level",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          outputs: [
+            {
+              name: "admin",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "pure",
+        },
+        {
+          type: "function",
+          name: "getHatEligibilityModule",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "eligibility",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "getHatLevel",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "level",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "getHatMaxSupply",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "maxSupply",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "getHatToggleModule",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "toggle",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "getImageURIForHat",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "_uri",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "getLocalHatLevel",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "level",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          stateMutability: "pure",
+        },
+        {
+          type: "function",
+          name: "getNextId",
+          inputs: [
+            {
+              name: "_admin",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "nextId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "getTippyTopHatDomain",
+          inputs: [
+            {
+              name: "_topHatDomain",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          outputs: [
+            {
+              name: "domain",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "getTopHatDomain",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "domain",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          stateMutability: "pure",
+        },
+        {
+          type: "function",
+          name: "hatSupply",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "supply",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "isActive",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "active",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "isAdminOfHat",
+          inputs: [
+            {
+              name: "_user",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "isAdmin",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "isApprovedForAll",
+          inputs: [
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [
+            {
+              name: "",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "isEligible",
+          inputs: [
+            {
+              name: "_wearer",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "eligible",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "isInGoodStanding",
+          inputs: [
+            {
+              name: "_wearer",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "standing",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "isLocalTopHat",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "_isLocalTopHat",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "pure",
+        },
+        {
+          type: "function",
+          name: "isTopHat",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "_isTopHat",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "isValidHatId",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "validHatId",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "pure",
+        },
+        {
+          type: "function",
+          name: "isWearerOfHat",
+          inputs: [
+            {
+              name: "_user",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "isWearer",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "lastTopHatId",
+          inputs: [],
+          outputs: [
+            {
+              name: "",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "linkedTreeAdmins",
+          inputs: [
+            {
+              name: "",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          outputs: [
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "linkedTreeRequests",
+          inputs: [
+            {
+              name: "",
+              type: "uint32",
+              internalType: "uint32",
+            },
+          ],
+          outputs: [
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "makeHatImmutable",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "mintHat",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_wearer",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [
+            {
+              name: "success",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "mintTopHat",
+          inputs: [
+            {
+              name: "_target",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_details",
+              type: "string",
+              internalType: "string",
+            },
+            {
+              name: "_imageURI",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          outputs: [
+            {
+              name: "topHatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "multicall",
+          inputs: [
+            {
+              name: "data",
+              type: "bytes[]",
+              internalType: "bytes[]",
+            },
+          ],
+          outputs: [
+            {
+              name: "",
+              type: "bytes[]",
+              internalType: "bytes[]",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "name",
+          inputs: [],
+          outputs: [
+            {
+              name: "",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "noCircularLinkage",
+          inputs: [
+            {
+              name: "_topHatDomain",
+              type: "uint32",
+              internalType: "uint32",
+            },
+            {
+              name: "_linkedAdmin",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "notCircular",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "relinkTopHatWithinTree",
+          inputs: [
+            {
+              name: "_topHatDomain",
+              type: "uint32",
+              internalType: "uint32",
+            },
+            {
+              name: "_newAdminHat",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_eligibility",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_toggle",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_details",
+              type: "string",
+              internalType: "string",
+            },
+            {
+              name: "_imageURI",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "renounceHat",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "requestLinkTopHatToTree",
+          inputs: [
+            {
+              name: "_topHatDomain",
+              type: "uint32",
+              internalType: "uint32",
+            },
+            {
+              name: "_requestedAdminHat",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "safeBatchTransferFrom",
+          inputs: [
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "uint256[]",
+              internalType: "uint256[]",
+            },
+            {
+              name: "",
+              type: "uint256[]",
+              internalType: "uint256[]",
+            },
+            {
+              name: "",
+              type: "bytes",
+              internalType: "bytes",
+            },
+          ],
+          outputs: [],
+          stateMutability: "pure",
+        },
+        {
+          type: "function",
+          name: "safeTransferFrom",
+          inputs: [
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "",
+              type: "bytes",
+              internalType: "bytes",
+            },
+          ],
+          outputs: [],
+          stateMutability: "pure",
+        },
+        {
+          type: "function",
+          name: "sameTippyTopHatDomain",
+          inputs: [
+            {
+              name: "_topHatDomain",
+              type: "uint32",
+              internalType: "uint32",
+            },
+            {
+              name: "_newAdminHat",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "sameDomain",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "setApprovalForAll",
+          inputs: [
+            {
+              name: "",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          outputs: [],
+          stateMutability: "pure",
+        },
+        {
+          type: "function",
+          name: "setHatStatus",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_newStatus",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          outputs: [
+            {
+              name: "toggled",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "setHatWearerStatus",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_wearer",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_eligible",
+              type: "bool",
+              internalType: "bool",
+            },
+            {
+              name: "_standing",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          outputs: [
+            {
+              name: "updated",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "supportsInterface",
+          inputs: [
+            {
+              name: "interfaceId",
+              type: "bytes4",
+              internalType: "bytes4",
+            },
+          ],
+          outputs: [
+            {
+              name: "",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "pure",
+        },
+        {
+          type: "function",
+          name: "transferHat",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+            {
+              name: "_from",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "_to",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "unlinkTopHatFromTree",
+          inputs: [
+            {
+              name: "_topHatDomain",
+              type: "uint32",
+              internalType: "uint32",
+            },
+            {
+              name: "_wearer",
+              type: "address",
+              internalType: "address",
+            },
+          ],
+          outputs: [],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "uri",
+          inputs: [
+            {
+              name: "id",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "_uri",
+              type: "string",
+              internalType: "string",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "function",
+          name: "viewHat",
+          inputs: [
+            {
+              name: "_hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "details",
+              type: "string",
+              internalType: "string",
+            },
+            {
+              name: "maxSupply",
+              type: "uint32",
+              internalType: "uint32",
+            },
+            {
+              name: "supply",
+              type: "uint32",
+              internalType: "uint32",
+            },
+            {
+              name: "eligibility",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "toggle",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "imageURI",
+              type: "string",
+              internalType: "string",
+            },
+            {
+              name: "lastHatId",
+              type: "uint16",
+              internalType: "uint16",
+            },
+            {
+              name: "mutable_",
+              type: "bool",
+              internalType: "bool",
+            },
+            {
+              name: "active",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+        {
+          type: "event",
+          name: "ApprovalForAll",
+          inputs: [
+            {
+              name: "owner",
               type: "address",
               indexed: true,
               internalType: "address",
             },
             {
-              name: "instance",
+              name: "operator",
               type: "address",
               indexed: true,
+              internalType: "address",
+            },
+            {
+              name: "approved",
+              type: "bool",
+              indexed: false,
+              internalType: "bool",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "HatCreated",
+          inputs: [
+            {
+              name: "id",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+            {
+              name: "details",
+              type: "string",
+              indexed: false,
+              internalType: "string",
+            },
+            {
+              name: "maxSupply",
+              type: "uint32",
+              indexed: false,
+              internalType: "uint32",
+            },
+            {
+              name: "eligibility",
+              type: "address",
+              indexed: false,
+              internalType: "address",
+            },
+            {
+              name: "toggle",
+              type: "address",
+              indexed: false,
+              internalType: "address",
+            },
+            {
+              name: "mutable_",
+              type: "bool",
+              indexed: false,
+              internalType: "bool",
+            },
+            {
+              name: "imageURI",
+              type: "string",
+              indexed: false,
+              internalType: "string",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "HatDetailsChanged",
+          inputs: [
+            {
+              name: "hatId",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+            {
+              name: "newDetails",
+              type: "string",
+              indexed: false,
+              internalType: "string",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "HatEligibilityChanged",
+          inputs: [
+            {
+              name: "hatId",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+            {
+              name: "newEligibility",
+              type: "address",
+              indexed: false,
               internalType: "address",
             },
           ],
@@ -5599,49 +6688,88 @@ const deployedContracts = {
         },
         {
           type: "event",
-          name: "RoleAdminChanged",
+          name: "HatImageURIChanged",
           inputs: [
             {
-              name: "role",
-              type: "bytes32",
-              indexed: true,
-              internalType: "bytes32",
+              name: "hatId",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
             },
             {
-              name: "previousAdminRole",
-              type: "bytes32",
-              indexed: true,
-              internalType: "bytes32",
-            },
-            {
-              name: "newAdminRole",
-              type: "bytes32",
-              indexed: true,
-              internalType: "bytes32",
+              name: "newImageURI",
+              type: "string",
+              indexed: false,
+              internalType: "string",
             },
           ],
           anonymous: false,
         },
         {
           type: "event",
-          name: "RoleGranted",
+          name: "HatMaxSupplyChanged",
           inputs: [
             {
-              name: "role",
-              type: "bytes32",
-              indexed: true,
-              internalType: "bytes32",
+              name: "hatId",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
             },
             {
-              name: "account",
-              type: "address",
-              indexed: true,
-              internalType: "address",
+              name: "newMaxSupply",
+              type: "uint32",
+              indexed: false,
+              internalType: "uint32",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "HatMutabilityChanged",
+          inputs: [
+            {
+              name: "hatId",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "HatStatusChanged",
+          inputs: [
+            {
+              name: "hatId",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
             },
             {
-              name: "sender",
+              name: "newStatus",
+              type: "bool",
+              indexed: false,
+              internalType: "bool",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "HatToggleChanged",
+          inputs: [
+            {
+              name: "hatId",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+            {
+              name: "newToggle",
               type: "address",
-              indexed: true,
+              indexed: false,
               internalType: "address",
             },
           ],
@@ -5649,65 +6777,494 @@ const deployedContracts = {
         },
         {
           type: "event",
-          name: "RoleRevoked",
+          name: "TopHatLinkRequested",
           inputs: [
             {
-              name: "role",
-              type: "bytes32",
-              indexed: true,
-              internalType: "bytes32",
+              name: "domain",
+              type: "uint32",
+              indexed: false,
+              internalType: "uint32",
             },
             {
-              name: "account",
+              name: "newAdmin",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "TopHatLinked",
+          inputs: [
+            {
+              name: "domain",
+              type: "uint32",
+              indexed: false,
+              internalType: "uint32",
+            },
+            {
+              name: "newAdmin",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "TransferBatch",
+          inputs: [
+            {
+              name: "operator",
               type: "address",
               indexed: true,
               internalType: "address",
             },
             {
-              name: "sender",
+              name: "from",
               type: "address",
               indexed: true,
               internalType: "address",
+            },
+            {
+              name: "to",
+              type: "address",
+              indexed: true,
+              internalType: "address",
+            },
+            {
+              name: "ids",
+              type: "uint256[]",
+              indexed: false,
+              internalType: "uint256[]",
+            },
+            {
+              name: "amounts",
+              type: "uint256[]",
+              indexed: false,
+              internalType: "uint256[]",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "TransferSingle",
+          inputs: [
+            {
+              name: "operator",
+              type: "address",
+              indexed: true,
+              internalType: "address",
+            },
+            {
+              name: "from",
+              type: "address",
+              indexed: true,
+              internalType: "address",
+            },
+            {
+              name: "to",
+              type: "address",
+              indexed: true,
+              internalType: "address",
+            },
+            {
+              name: "id",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+            {
+              name: "amount",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "URI",
+          inputs: [
+            {
+              name: "value",
+              type: "string",
+              indexed: false,
+              internalType: "string",
+            },
+            {
+              name: "id",
+              type: "uint256",
+              indexed: true,
+              internalType: "uint256",
+            },
+          ],
+          anonymous: false,
+        },
+        {
+          type: "event",
+          name: "WearerStandingChanged",
+          inputs: [
+            {
+              name: "hatId",
+              type: "uint256",
+              indexed: false,
+              internalType: "uint256",
+            },
+            {
+              name: "wearer",
+              type: "address",
+              indexed: false,
+              internalType: "address",
+            },
+            {
+              name: "wearerStanding",
+              type: "bool",
+              indexed: false,
+              internalType: "bool",
             },
           ],
           anonymous: false,
         },
         {
           type: "error",
-          name: "AccessControlBadConfirmation",
+          name: "AllHatsWorn",
+          inputs: [
+            {
+              name: "hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+        },
+        {
+          type: "error",
+          name: "AlreadyWearingHat",
+          inputs: [
+            {
+              name: "wearer",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+        },
+        {
+          type: "error",
+          name: "BatchArrayLengthMismatch",
           inputs: [],
         },
         {
           type: "error",
-          name: "AccessControlUnauthorizedAccount",
+          name: "CircularLinkage",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "CrossTreeLinkage",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "HatDoesNotExist",
           inputs: [
             {
-              name: "account",
-              type: "address",
-              internalType: "address",
-            },
-            {
-              name: "neededRole",
-              type: "bytes32",
-              internalType: "bytes32",
+              name: "hatId",
+              type: "uint256",
+              internalType: "uint256",
             },
           ],
         },
         {
           type: "error",
-          name: "ERC1167FailedCreateClone",
+          name: "HatNotActive",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "Immutable",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "InvalidHatId",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "InvalidUnlink",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "LinkageNotRequested",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "MaxLevelsReached",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "MaxLevelsReached",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "NewMaxSupplyTooLow",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "NotAdmin",
+          inputs: [
+            {
+              name: "user",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "hatId",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+        },
+        {
+          type: "error",
+          name: "NotAdminOrWearer",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "NotEligible",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "NotHatWearer",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "NotHatsEligibility",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "NotHatsToggle",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "StringTooLong",
+          inputs: [],
+        },
+        {
+          type: "error",
+          name: "ZeroAddress",
           inputs: [],
         },
       ],
       inheritedFunctions: {
-        DEFAULT_ADMIN_ROLE: "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
-        getRoleAdmin: "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
-        grantRole: "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
-        hasRole: "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
-        renounceRole: "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
-        revokeRole: "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
-        supportsInterface: "lib/openzeppelin-contracts/contracts/access/AccessControl.sol",
+        approveLinkTopHatToTree: "contracts/Hats/Interfaces/IHats.sol",
+        balanceOf: "contracts/Hats/utils/ERC1155.sol",
+        balanceOfBatch: "contracts/Hats/utils/ERC1155.sol",
+        batchCreateHats: "contracts/Hats/Interfaces/IHats.sol",
+        batchMintHats: "contracts/Hats/Interfaces/IHats.sol",
+        buildHatId: "contracts/Hats/HatsIdUtilities.sol",
+        changeHatDetails: "contracts/Hats/Interfaces/IHats.sol",
+        changeHatEligibility: "contracts/Hats/Interfaces/IHats.sol",
+        changeHatImageURI: "contracts/Hats/Interfaces/IHats.sol",
+        changeHatMaxSupply: "contracts/Hats/Interfaces/IHats.sol",
+        changeHatToggle: "contracts/Hats/Interfaces/IHats.sol",
+        checkHatStatus: "contracts/Hats/Interfaces/IHats.sol",
+        checkHatWearerStatus: "contracts/Hats/Interfaces/IHats.sol",
+        createHat: "contracts/Hats/Interfaces/IHats.sol",
+        getAdminAtLevel: "contracts/Hats/HatsIdUtilities.sol",
+        getAdminAtLocalLevel: "contracts/Hats/HatsIdUtilities.sol",
+        getHatEligibilityModule: "contracts/Hats/Interfaces/IHats.sol",
+        getHatLevel: "contracts/Hats/HatsIdUtilities.sol",
+        getHatMaxSupply: "contracts/Hats/Interfaces/IHats.sol",
+        getHatToggleModule: "contracts/Hats/Interfaces/IHats.sol",
+        getImageURIForHat: "contracts/Hats/Interfaces/IHats.sol",
+        getLocalHatLevel: "contracts/Hats/HatsIdUtilities.sol",
+        getNextId: "contracts/Hats/Interfaces/IHats.sol",
+        getTippyTopHatDomain: "contracts/Hats/HatsIdUtilities.sol",
+        getTopHatDomain: "contracts/Hats/HatsIdUtilities.sol",
+        hatSupply: "contracts/Hats/Interfaces/IHats.sol",
+        isAdminOfHat: "contracts/Hats/Interfaces/IHats.sol",
+        isEligible: "contracts/Hats/Interfaces/IHats.sol",
+        isInGoodStanding: "contracts/Hats/Interfaces/IHats.sol",
+        isLocalTopHat: "contracts/Hats/HatsIdUtilities.sol",
+        isTopHat: "contracts/Hats/HatsIdUtilities.sol",
+        isValidHatId: "contracts/Hats/HatsIdUtilities.sol",
+        isWearerOfHat: "contracts/Hats/Interfaces/IHats.sol",
+        makeHatImmutable: "contracts/Hats/Interfaces/IHats.sol",
+        mintHat: "contracts/Hats/Interfaces/IHats.sol",
+        mintTopHat: "contracts/Hats/Interfaces/IHats.sol",
+        noCircularLinkage: "contracts/Hats/HatsIdUtilities.sol",
+        relinkTopHatWithinTree: "contracts/Hats/Interfaces/IHats.sol",
+        renounceHat: "contracts/Hats/Interfaces/IHats.sol",
+        requestLinkTopHatToTree: "contracts/Hats/Interfaces/IHats.sol",
+        sameTippyTopHatDomain: "contracts/Hats/HatsIdUtilities.sol",
+        setHatStatus: "contracts/Hats/Interfaces/IHats.sol",
+        setHatWearerStatus: "contracts/Hats/Interfaces/IHats.sol",
+        transferHat: "contracts/Hats/Interfaces/IHats.sol",
+        unlinkTopHatFromTree: "contracts/Hats/Interfaces/IHats.sol",
+        uri: "contracts/Hats/utils/ERC1155.sol",
+        viewHat: "contracts/Hats/Interfaces/IHats.sol",
+        isApprovedForAll: "contracts/Hats/utils/ERC1155.sol",
+        safeBatchTransferFrom: "contracts/Hats/utils/ERC1155.sol",
+        safeTransferFrom: "contracts/Hats/utils/ERC1155.sol",
+        setApprovalForAll: "contracts/Hats/utils/ERC1155.sol",
+        supportsInterface: "contracts/Hats/utils/ERC1155.sol",
+        multicall: "contracts/Hats/utils/Multicallable.sol",
+        linkedTreeAdmins: "contracts/Hats/HatsIdUtilities.sol",
+        linkedTreeRequests: "contracts/Hats/HatsIdUtilities.sol",
       },
+    },
+    null: {
+      address: "0xac9fcba56e42d5960f813b9d0387f3d3bc003338",
+      abi: [
+        {
+          type: "constructor",
+          inputs: [
+            {
+              name: "erc1155Address",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "amount",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "getWearerStatus",
+          inputs: [
+            {
+              name: "_wearer",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "eligible",
+              type: "bool",
+              internalType: "bool",
+            },
+            {
+              name: "standing",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+      ],
+      inheritedFunctions: {},
+    },
+    ActiveModule: {
+      address: "0x54b8d8e2455946f2a5b8982283f2359812e815ce",
+      abi: [
+        {
+          type: "function",
+          name: "getWearerStatus",
+          inputs: [
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "eligible",
+              type: "bool",
+              internalType: "bool",
+            },
+            {
+              name: "standing",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "pure",
+        },
+      ],
+      inheritedFunctions: {},
+    },
+    ERC1155EligibiltiyModule: {
+      address: "0x56d13eb21a625eda8438f55df2c31dc3632034f5",
+      abi: [
+        {
+          type: "constructor",
+          inputs: [
+            {
+              name: "erc1155Address",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "amount",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          stateMutability: "nonpayable",
+        },
+        {
+          type: "function",
+          name: "getWearerStatus",
+          inputs: [
+            {
+              name: "_wearer",
+              type: "address",
+              internalType: "address",
+            },
+            {
+              name: "",
+              type: "uint256",
+              internalType: "uint256",
+            },
+          ],
+          outputs: [
+            {
+              name: "eligible",
+              type: "bool",
+              internalType: "bool",
+            },
+            {
+              name: "standing",
+              type: "bool",
+              internalType: "bool",
+            },
+          ],
+          stateMutability: "view",
+        },
+      ],
+      inheritedFunctions: {},
     },
   },
 } as const;

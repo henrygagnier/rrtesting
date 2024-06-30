@@ -15,10 +15,10 @@ import {ReputationFaucet} from "../contracts/Reputation/ReputationFaucet.sol";
 contract DeployDemoScript is ScaffoldETHDeploy {
     error InvalidPrivateKey(string);
 
-    address controller = 0x2F15D4A66D22ecC6967928b6A76Ab06897b05676; //replace with burner or other address from wallet!
+    address controller = 0x2911B8cB873651Cb99f9975E6791EDBded598017; //replace with burner or other address from wallet!
 
     function run() external {
-        uint256 deployerPrivateKey = setupLocalhostEnv();
+        uint256 deployerPrivateKey = 0x1ecea19f9bb246fdf1e5561d2ca517dd0f8df75e3b89b2ff8c7d0865e7962dbd;
         if (deployerPrivateKey == 0) {
             revert InvalidPrivateKey(
                 "You don't have a deployer account. Make sure you have set DEPLOYER_PRIVATE_KEY in .env or use `yarn generate` to generate a new random account"
@@ -64,7 +64,7 @@ contract DeployDemoScript is ScaffoldETHDeploy {
             id := chainid()
         }
 
-        if (id == 31337) {
+        //if (id == 31337) {
             Hats hatsInstance = new Hats("v0.1", "Default IFPS");
 
             console.log(deployerPubKey);
@@ -136,13 +136,28 @@ contract DeployDemoScript is ScaffoldETHDeploy {
                 true,
                 "ipfs://bafkreigvzey77niarqslm6wjd3e77ihwc5rcdrrahp3o6og2dszzzw2fpi"
             );
-
-            console.log(claimableHatId1);
-            console.log(claimableHatId2);
-            console.log(claimableHatId3);
-        }
+        //}
 
         vm.stopBroadcast();
+
+        deployments.push(
+            Deployment({name: "Hats", addr: address(hatsInstance)})
+        );
+        deployments.push(
+            Deployment({name: "MultiClaimsHatter", addr: address(hatter)})
+        );
+        deployments.push(
+            Deployment({name: "ActiveModule", addr: address(activeModule)})
+        );
+        deployments.push(
+            Deployment({name: "ERC1155EligibiltiyModule", addr: address(eligibilityModule)})
+        );
+        deployments.push(
+            Deployment({name: "ERC1155EligibiltiyModule", addr: address(eligibilityModule2)})
+        );
+        deployments.push(
+            Deployment({name: "ERC1155EligibiltiyModule", addr: address(eligibilityModule3)})
+        );
     }
 
     ///////////////////////////////////
